@@ -3,16 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的第一个前端页面</title>
+  <title>前任 Skill AI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <h1>我的第一个前端页面</h1>
-    <p>这是我放在 GitHub 上的第一个网页项目。</p>
+  <main class="app">
+    <section class="hero">
+      <p class="tag">微信风格 · 情感回复助手</p>
+      <h1>前任 Skill AI</h1>
+      <p class="desc">输入聊天情况，我帮你分析对方态度、关系风险，并给出更稳妥的回复建议。</p>
+    </section>
 
-    <button id="helloBtn">点我一下</button>
-    <p id="message"></p>
+    <section class="chat-card">
+      <div class="chat-title">把情况发给 AI</div>
+      <textarea id="story" placeholder="例如：我们分手两个月了，昨天他突然问我最近怎么样。我不知道他是什么意思，也不知道该不该回。"></textarea>
+      <button id="analyzeBtn">生成分析</button>
+    </section>
+
+    <section class="result-card" id="resultBox">
+      <div class="result-header">AI 分析结果</div>
+      <div id="resultText" class="result-text">
+        先输入你的情况，再点击「生成分析」。
+      </div>
+    </section>
+
+    <p class="notice">提示：建议只用于整理思路，不要用来骚扰、试探、监控或操控别人。保护好自己的情绪和边界更重要。</p>
   </main>
 
   <script src="script.js"></script>
